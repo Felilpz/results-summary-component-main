@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Default;
+    src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: DefaultItalic;
+    src: url(../fonts/HankenGrotesk-Italic-VariableFont_wght.ttf);
+}
+
+/* .container-fluid {
+    display: flex !important;
+    align-items: center !important;
+} */
+
+:root {
+    /* Colors */
+    /* Primario */
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+
+    /* Gradients (backgrounds) */
+    --LightSlateBlue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+#resultado {
+    background-image: linear-gradient(360deg, var(--LightRoyalBlue), var(--LightSlateBlue));
+    border-radius: 10px;
+
+    width: 50%;
+    padding: 10px;
+    /* color: var(--White); */
+}
+
+div#resultado > h2 {
+    color: var(--PaleBlue);
+}
+
+#circulo {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: var(--DarkGrayBlue);
+}
