@@ -68,6 +68,10 @@ main {
     border-radius: 30px;
 }
 
+h1 {
+    font-size: 60px;
+}
+
 #resultado {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 30px;
@@ -105,13 +109,13 @@ div#resultado p {
 
 
 .great {
-    padding: 10px 0px 6px 0px;
-    font-size: 2em;
+    padding: 20px 0px;
 }
 
 .paragraph {
-    width: 70%;
+    width: 80%;
     padding-bottom: 30px;
+    color: var(--LightLavender) !important;
 }
 
 #resultado p {
@@ -127,6 +131,7 @@ div#resumo {
 
 #resumo h2 {
     padding-top: 10px;
+    padding-bottom: 30px;
     color: var(--DarkGrayBlue);
 }
 
@@ -135,19 +140,19 @@ div#resumo {
 
 }
 
-.reaction, .memory, .verbal, .visual {
+/* .reaction, .memory, .verbal, .visual {
     width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .bloco {
-    width: 70%;
-    /* margin-bottom: 30px; */
+    width: 100%;
+    margin-bottom: 30px;
     padding: 15px !important;
-    margin: 10px 0;
+    margin: 7px 0;
     color: var(--DarkGrayBlue) !important;
 
     display: flex;
@@ -162,7 +167,7 @@ div#resumo {
 #status {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center !important;
 }
 
 .reaction {
@@ -207,6 +212,7 @@ div#resumo {
 
 .score {
     color: hsla(252, 100%, 67%, 0.514);
+    font-weight: normal;
 }
 
 #btn {
@@ -220,17 +226,80 @@ div#resumo {
 }
 
 button#btn:hover {
-    transition: 10s !important;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+.bloq {
+    font-weight: bolder;
+}
+
+.bloquinho {
+    display: flex;
+}
+
+.bloquinho img {
+    padding: 0px 5px;
+}
+
+@media screen and (max-width: 599px) {
     main {
         display: flex;
+        width: 90vw;
         flex-direction: column;
         align-items: center;
-        box-shadow: none;
+        /* align-items: center; */
+        /* justify-content: center; */
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     }
 
-    
+    #resultado {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    #resultado h2:first-child {
+        padding-top: 80px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        width: 50%;
+    }
+
+    #resumo {
+        width: 100% !important;
+    }
+
+    /* .bloco {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; 
+    }  */
+
+    .bloquinho p {
+        padding: 10px;
+        /* display: flex;
+        flex-direction: row; */
+    }
+
+    #btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    main {
+        width: 100vw;
+    }
 }

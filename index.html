@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,14 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="script/script.js" defer></script>
 </head>
-<body>
+
+<body id="body">
     <div class="container-fluid2">
         <main>
             <div id="resultado"> <!--PRINCIPAL 1-->
                 <h2>Your Result</h2>
                 <div id="circulo">
-                    <h1>76</h1>
+                    <h1 id="rodavel">76</h1>
                     <p>of 100</p>
                 </div>
                 <h2 class="great">Great</h2>
@@ -26,27 +28,35 @@
                 <h2>Summary</h2>
                 <div id="status">
                     <div class="bloco reaction">
-                        <img src="assets/images/icon-reaction.svg" alt="Emoji reaction">
-                        <p class="rea">Reaction</p>
-                        <p>80 / <span class="score">100</span></p>
+                        <div class="bloquinho">
+                            <img src="assets/images/icon-reaction.svg" alt="Emoji reaction">
+                            <p class="rea">Reaction</p>
+                        </div>
+                        <p class="bloq">80 / <span class="score">100</span></p>
                     </div>
 
                     <div class="bloco memory">
-                        <img src="assets/images/icon-memory.svg" alt="Emoji memory">
-                        <p class="mem">Memory</p>
-                        <p>92 / <span class="score">100</span></p>
+                        <div class="bloquinho">
+                            <img src="assets/images/icon-memory.svg" alt="Emoji memory">
+                            <p class="mem">Memory</p>
+                        </div>
+                        <p class="bloq">92 / <span class="score">100</span></p>
                     </div>
 
                     <div class="bloco verbal">
-                        <img src="assets/images/icon-verbal.svg" alt="Emoji verbal">
-                        <p class="ver">Verbal</p>
-                        <p>61 / <span class="score">100</span></p>
+                        <div class="bloquinho">
+                            <img src="assets/images/icon-verbal.svg" alt="Emoji verbal">
+                            <p class="ver">Verbal</p>
+                        </div>
+                        <p class="bloq">61 / <span class="score">100</span></p>
                     </div>
 
                     <div class="bloco visual">
-                        <img src="assets/images/icon-visual.svg" alt="Emoji Visual">
-                        <p class="vis">Visual</p>
-                        <p>80 / <span class="score">100</span></p>
+                        <div class="bloquinho">
+                            <img src="assets/images/icon-visual.svg" alt="Emoji Visual">
+                            <p class="vis">Visual</p>
+                        </div>
+                        <p class="bloq">80 / <span class="score">100</span></p>
                     </div>
 
                     <button type="button" id="btn">
@@ -57,4 +67,5 @@
         </main>
     </div>
 </body>
+
 </html>
